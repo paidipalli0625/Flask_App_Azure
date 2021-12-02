@@ -1,0 +1,1 @@
+Creating a Retail web Application using Fask Framework to explore real-world Retail data in Azure Cloud. And also, to find the patterns and trends of how customer engagement changes over time. And to state or plot what demographical factors affect customer engagement. And host the web application in AWS cloud using Azure Services (EC2, Azure SQL Databases ).
