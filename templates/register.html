@@ -1,0 +1,29 @@
+# templates/registration.html
+{% block content %}
+<div class="container" align="center" style="border:3px solid green">
+  <h3>Create your account</h3>
+  <form action="/register/" method="POST">
+  <hr>
+   username: <input type="text" placeholder="Enter username" name="username" id="username" required>
+<br>
+<br>   
+password: <input type="password" placeholder="Enter password" name="password" id="password" required>
+ <br>
+<br>
+FirstName: <input type="text" placeholder="Enter your firstname" name ="firstname" id="firstname" required>
+ <br>
+<br>
+LastName : <input type="text" placeholder="Enter your password" name="lastname" id="lastname" required>
+<br>
+<br>
+Email : <input type="text" placeholder="Enter your Email" name="email" id="email" required>  
+<br>
+<br>
+<button type="submit" class="registerbtn">Register</button>
+<hr>
+  </form>
+<form action="/loginNav" method="GET">
+  <button type="submit" class="loginbtn">Already have account? login</button>
+</form>
+</div>
+{% endblock %}

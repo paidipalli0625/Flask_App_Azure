@@ -1,0 +1,17 @@
+#templates/login.html
+{% block content %}
+<div class="container" align="center" style="border:3px solid green">
+  <h3>login to  your account</h3>
+  <form action="/login/" method="POST">
+  <hr>
+   username: <input type="text" placeholder="Enter username" name="username" id="username" required>
+   password: <input type="password" placeholder="Enter password" name="password" id="password" required>
+  <button type="submit" class="loginbtn">Login</button>
+<hr>
+  </form>
+<form action="/registerNav/" method="GET">
+    <button name="RegisterBtn" type="submit">Dont have account?Register</button>
+</form>
+</div>
+{% endblock %}
+
