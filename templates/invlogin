@@ -1,0 +1,11 @@
+#templates/invlogin.html
+{% block content %}
+<div class="container" align="center" style="border:3px solid green">
+  <center>
+  <h3>Wrong details, please create new account if you dont have one</h3>
+  <form action="/registerNav/" method="GET">
+    <button name="RegisterBtn" type="submit">Dont have account?Register</button>
+  </form>
+  </center>
+</div>
+{% endblock %}
