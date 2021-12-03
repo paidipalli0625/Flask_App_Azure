@@ -13,7 +13,7 @@ app = Flask(__name__)
 #Bootstrap(app)
 app = Flask(__name__)   
 # creating connection Object which will contain SQL Server Connection    
-connection = pyodbc.connect('Driver={SQL Server};Server=midterm-server.database.windows.net;Database=Midterm-DB;uid=Kalyan;pwd=FireIce@6')# Creating Cursor    
+connection = pyodbc.connect('Driver={SQL Server};Server=grp40finalproject.database.windows.net;Database=cloudfinalproject;uid=Kalyan;pwd=Riddleapt@302')# Creating Cursor    
     
 cursor = connection.cursor()    
 cursor.execute("SELECT TOP(10000) H.HSHD_NUM,BASKET_NUM,PURCHASE_,P.PRODUCT_NUM,DEPARTMENT,COMMODITY FROM [dbo].[households] h inner join [dbo].[temptran] t on h.HSHD_NUM = t.HSHD_NUM  inner join [dbo].[products] p on t.PRODUCT_NUM = p.PRODUCT_NUM order by h.HSHD_NUM")    
@@ -33,7 +33,7 @@ app.config['UPLOAD_FOLDER'] =  UPLOAD_FOLDER
 
 
 # Database
-cnctn = pyodbc.connect('Driver={SQL Server};Server=midterm-server.database.windows.net;Database=Midterm-DB;uid=Kalyan;pwd=FireIce@6')
+cnctn = pyodbc.connect('Driver={SQL Server};Server=grp40finalproject.database.windows.net;Database=cloudfinalproject;uid=Kalyan;pwd=Riddleapt@302')
 
 mycursor = cnctn.cursor()
 @app.route('/')
